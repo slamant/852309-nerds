@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Антон Сургучёв](https://up.htmlacademy.ru/htmlcss/23/user/852309).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига] (https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
