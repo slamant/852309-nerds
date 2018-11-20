@@ -7,60 +7,72 @@
 </head>
 <body>
 <header class="main-header">
-  <div>
-    <a class="main-logo" href="#"> 
-    </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href=#>Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href=#>Контакты</a></li>
-        </ul>
-      </nav>
-      <a class="cart-link" href=#>Корзина</a> 
-  </div>
- 
+  <a class="main-logo">
+    <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
+  </a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <a class="cart-link" href=#>Корзина</a> 
 </header>
-   <section class="services">
-     <ul>
-       <li>
-         <img src="/websites.img">
-         <h3>Веб-сайты</h3>
-         <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
-         <button>Заказать</button>
-       </li>
-       <li>
-         <img src="/apps.img">
-         <h3>Приложения</h3>
-         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-         <button>Заказать</button>
-       </li>
-       <li>
-         <img src="/presentation.img">
-         <h3>Презентации</h3>
-         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-         <button>Заказать</button>
-       </li>
-     </ul>
-   </section>
-  <section class="social-media">
-   <div class="links">
+
+  <main class="main-container">
+
+    <section class="services">
       <ul>
         <li>
-          <a href="http://vk.com">Вконтакте</a>
+          <article class="service">
+            <img src="/websites.img">
+            <h3 class="service-title">Веб-сайты</h3>
+            <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
+            <a href="#">Заказать</a>
+          </article>
         </li>
         <li>
-          <a href="http://facebook.com">Facebook</a>
+          <article class="service">
+            <img src="/apps.img">
+            <h3 class="service-title">Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#">Заказать</a>
+          </article>
         </li>
         <li>
-          <a href="http://instagram.com">Instagram</a>
+          <article class="service">
+            <img src="/presentation.img">
+            <h3 class="service-title">Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#">Заказать</a>
+          </article>
         </li>
       </ul>
-    </div>
-    <div class="partnership">
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="social-media">
+      <div>
+        <ul class="links">
+          <li>
+            <a href="http://vk.com">Вконтакте</a>
+          </li>
+          <li>
+            <a href="http://facebook.com">Facebook</a>
+          </li>
+          <li>
+            <a href="http://instagram.com">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="partnership">
+         <p class="big">Давайте дружить, это выгодно!</p>
+         <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
 </body>
