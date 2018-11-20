@@ -10,111 +10,147 @@
 <body>
 
 <header class="main-header">
-  <a class="main-logo" href="#"> 
+    <a class="main-logo">
+        <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
+    </a> 
     </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href=#>Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href=#>Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <a class="cart-link" href=#>Корзина</a>
+      <a class="cart-link" href="#">Корзина</a>
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>
 </header>
 <main>
-  <fieldset>
-  <legend>Сетка:</legend>
-    <ul>
-      <li>
-        <label class="radio-button-label">
-          <input type="radio" value="adaptive" checked> Адаптивная
-        </label>
-      </li>
-      <li>
-        <label class="radio-button-label">
-          <input type="radio" value="fixed"> Фиксированная
-        </label>
-      </li>
-      <li>
-        <label class="radio-button-label">
-          <input type="radio" value="floating"> Резиновая
-         </label>
-      </li>
-    </ul>
-  </fieldset>
-  <fieldset>
-      <legend>Особенности:</legend>
+  
+    <form class="filter">
+      <fieldset>
+      <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <label class="radio-button-label">
+              <input type="radio" name="grid-type" value="adaptive" checked> Адаптивная
+            </label>
+          </li>
+          <li>
+          <label class="radio-button-label">
+            <input type="radio" name="grid-type" value="fixed"> Фиксированная
+          </label>
+          </li>
+          <li>
+            <label class="radio-button-label">
+              <input type="radio" name="grid-type" value="floating"> Резиновая
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"  checked> Слайдер
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Блок преимуществ
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox" checked> Новости
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Галерея
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Корзина
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+
+    <section class="product-list">
+
       <ul>
         <li>
-          <label class="checkbox-label">
-            <input type="checkbox"  checked> Слайдер
-          </label>
+          <section class="product">
+            <section class="browser-header">
+              <ul>
+                <li class="browser-button"></li>
+                <li class="browser-button"></li>
+                <li class="browser-button"></li>
+              </ul>
+            </section>
+              <img src="/sedona.jpg">
+              <section class="popup-info">
+                <h4>Sedona</h4>
+                <p>Информационный сайт для туристов</p>
+                <button class="btn">9 900 руб.</button>
+              </section>
+            </section>
         </li>
         <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Блок преимуществ
-          </label>
+          <section class="product">
+            <img src="/pink.jpg">
+          </section>
         </li>
         <li>
-          <label class="checkbox-label">
-            <input type="checkbox" checked> Новости
-          </label>
+          <section>
+            <img src="/borodinky.jpg">
+          </section class="product">
         </li>
         <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Галерея
-         </label>
+          <section class="product">
+            <img src="/mishka.jpg">
+          </section>
         </li>
         <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Корзина
-          </label>
+          <section class="product">
+            <img src="/a+.jpg">
+          </section>
+        </li>
+          <section class="product">
+            <img src="/kvast.jpg">
+          </section>
         </li>
       </ul>
-  </fieldset>
-  <button type="submit">Показать</button>
-  <section class="product-list">
-    <section>
-      <img src="/sedona.jpg">
+
     </section>
-    <section>
-      <img src="/pink.jpg">
-    </section>
-    <section>
-      <img src="/borodinky.jpg">
-    </section>
-    <section>
-      <img src="/mishka.jpg">
-    </section>
-    <section>
-      <img src="/a+.jpg">
-    </section>
-    <section>
-      <img src="/kvast.jpg">
-    </section>
-  </section>
+
 </main>
-<section class="social-media">
-  <div class="links">
-     <ul>
-       <li>
-         <a href="http://vk.com">Вконтакте</a>
-       </li>
-       <li>
-         <a href="http://facebook.com">Facebook</a>
-       </li>
-       <li>
-         <a href="http://instagram.com">Instagram</a>
-       </li>
-     </ul>
-   </div>
-   <div class="partnership">
-     <b>Давайте дружить, это выгодно!</b>
-     <p>Скидка 10% для друзей из социальных сетей.</p>
-   </div>
- </section>
+<footer>
+  <section class="social-media">
+    <div>
+      <ul class="links">
+        <li>
+          <a href="http://vk.com">Вконтакте</a>
+        </li>
+        <li>
+          <a href="http://facebook.com">Facebook</a>
+        </li>
+        <li>
+          <a href="http://instagram.com">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="partnership">
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </section>
+</footer>
 
 </body>
 
