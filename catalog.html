@@ -10,7 +10,7 @@
 <body>
 
 <header class="main-header">
-  <a class="main-logo">
+  <a class="main-logo" href="index.html">
     <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
   </a> 
   <nav class="main-nav">
@@ -22,83 +22,74 @@
     </ul>
   </nav>
     <a class="cart-link" href="#">Корзина</a>
-    <h1 class="catalog-header">Магазин готовых шаблонов</h1>
+    
 </header>
 <main>
-  
-  <form class="filter">
-    <fieldset>
-    <legend>Сетка:</legend>
-      <ul>
-        <li>
+  <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <form class="filter">
+      <fieldset class="grid">
+      <legend>Сетка:</legend>
+        <ul class="grid-types">
+          <li>
+            <label class="radio-button-label">
+              <input type="radio" name="grid-type" value="adaptive" checked> Адаптивная
+            </label>
+          </li>
+          <li>
           <label class="radio-button-label">
-            <input type="radio" name="grid-type" value="adaptive" checked> Адаптивная
+            <input type="radio" name="grid-type" value="fixed"> Фиксированная
           </label>
-        </li>
-        <li>
-        <label class="radio-button-label">
-          <input type="radio" name="grid-type" value="fixed"> Фиксированная
-        </label>
-        </li>
-        <li>
-          <label class="radio-button-label">
-            <input type="radio" name="grid-type" value="floating"> Резиновая
-          </label>
-        </li>
-      </ul>
-    </fieldset>
-    <fieldset>
-      <legend>Особенности:</legend>
-      <ul>
-        <li>
-          <label class="checkbox-label">
-            <input type="checkbox"  checked> Слайдер
-          </label>
-        </li>
-        <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Блок преимуществ
-          </label>
-        </li>
-        <li>
-          <label class="checkbox-label">
-            <input type="checkbox" checked> Новости
-          </label>
-        </li>
-        <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Галерея
-          </label>
-        </li>
-        <li>
-          <label class="checkbox-label">
-            <input type="checkbox"> Корзина
-          </label>
-        </li>
-      </ul>
-    </fieldset>
-    <button type="submit">Показать</button>
-  </form>
+          </li>
+          <li>
+            <label class="radio-button-label">
+              <input type="radio" name="grid-type" value="floating"> Резиновая
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="features">Особенности:</legend>
+        <ul class="features-list">
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"  checked> Слайдер
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Блок преимуществ
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox" checked> Новости
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Галерея
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-label">
+              <input type="checkbox"> Корзина
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
 
-    <section class="product-list">
+    <section class="products">
 
-      <ul>
+      <ul class="product-list">
         <li>
-          <section class="product">
-            <section class="browser-header">
-              <ul>
-                <li class="browser-button"></li>
-                <li class="browser-button"></li>
-                <li class="browser-button"></li>
-              </ul>
-            </section>
-              <img src="/sedona.jpg">
-              <section class="popup-info">
-                <h4>Sedona</h4>
-                <p>Информационный сайт для туристов</p>
-                <button class="btn">9 900 руб.</button>
-              </section>
-            </section>
+          <img src="/sedona.jpg">
+          <section class="product-popup-info">
+            <h4><a href="#">Sedona</a></h4>
+            <p>Информационный сайт для туристов</p>
+            <a class="btn">9 900 руб.</a>
+          </section>
         </li>
         <li>
           <section class="product">
@@ -129,27 +120,23 @@
     </section>
 
 </main>
-<footer>
-  <section class="social-media">
-    <div>
-      <ul class="links">
-        <li>
-          <a href="http://vk.com">Вконтакте</a>
-        </li>
-        <li>
-          <a href="http://facebook.com">Facebook</a>
-        </li>
-        <li>
-          <a href="http://instagram.com">Instagram</a>
-        </li>
-      </ul>
-    </div>
-    <div class="partnership">
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </section>
-</footer>
+<footer class="page-footer">
+  <ul class="links">
+    <li>
+      <a href="http://vk.com">Вконтакте</a>
+    </li>
+    <li>
+      <a href="http://facebook.com">Facebook</a>
+    </li>
+    <li>
+      <a href="http://instagram.com">Instagram</a>
+    </li>
+  </ul>
+  <div class="partnership">
+    <p><b>Давайте дружить, это выгодно!</b></p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+ </footer>
 
 </body>
 
