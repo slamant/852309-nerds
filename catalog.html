@@ -26,52 +26,53 @@
 </header>
 <main>
   <h1 class="main-title">Магазин готовых шаблонов</h1>
-    <form class="filter">
-      <fieldset class="grid">
-      <legend class="grid-title">Сетка:</legend>
-        <ul class="grid-types">
-          <li>
-            <label class="radio-button-label">
-              <input type="radio" name="grid-type" value="adaptive" checked> Адаптивная
+    <h2 class="visually-hidden">Фильтр</h2>
+    <form class="filter-form">
+      <fieldset class="filter-helper">
+      <legend class="filter-helper-title">Сетка:</legend>
+        <ul class="filter-grid-items">
+          <li class="filter-option-grid-item">
+            <label class="radio-button">
+              <input type="radio" name="grid-item" value="adaptive" checked> Адаптивная
             </label>
           </li>
-          <li>
-          <label class="radio-button-label">
-            <input type="radio" name="grid-type" value="fixed"> Фиксированная
-          </label>
+          <li class="filter-option">
+            <label class="radio-button">
+              <input type="radio" name="grid-item" value="fixed"> Фиксированная
+            </label>
           </li>
-          <li>
-            <label class="radio-button-label">
-              <input type="radio" name="grid-type" value="floating"> Резиновая
+          <li class="filter-option">
+            <label class="radio-button">
+              <input type="radio" name="grid-item" value="flex"> Резиновая
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="features">
-        <legend class="features-title">Особенности:</legend>
-        <ul class="features-list">
-          <li>
-            <label class="checkbox-label">
-              <input type="checkbox"  checked> Слайдер
+      <fieldset class="filter-helper">
+        <legend class="filter-helper-title">Особенности:</legend>
+        <ul class="filter-features-items">
+          <li class="filter-option-feature-item">
+            <label class="checkbox">
+              <input type="checkbox" name="feature-item" checked> Слайдер
             </label>
           </li>
-          <li>
-            <label class="checkbox-label">
-              <input type="checkbox"> Блок преимуществ
+          <li class="filter-option">
+            <label class="checkbox">
+              <input type="checkbox" name="feature-item"> Блок преимуществ
             </label>
           </li>
-          <li>
-            <label class="checkbox-label">
-              <input type="checkbox" checked> Новости
+          <li class="filter-option">
+            <label class="checkbox">
+              <input type="checkbox" name="feature-item" checked> Новости
             </label>
           </li>
-          <li>
-            <label class="checkbox-label">
+          <li class="filter-option">
+            <label class="checkbox" name="feature-item">
               <input type="checkbox"> Галерея
             </label>
           </li>
-          <li>
-            <label class="checkbox-label">
+          <li class="filter-option">
+            <label class="checkbox">
               <input type="checkbox"> Корзина
             </label>
           </li>
@@ -81,38 +82,38 @@
     </form>
 
     <section class="products">
-
+      <h3 class="visually-hidden">Список товаров</h3>
       <ul class="product-list">
         <li>
-          <img src="/sedona.jpg">
+          <img src="img/sedona.jpg" alt="Шаблон 'Sedona'" width="360" height="576">
           <section class="product-popup-info">
-            <h4><a href="#">Sedona</a></h4>
+            <h4 class="product-title"><a href="#">Sedona</a></h4>
             <p>Информационный сайт для туристов</p>
             <a class="btn">9 900 руб.</a>
           </section>
         </li>
         <li>
-          <section class="product">
-            <img src="/pink.jpg">
+          <section class="popup-info">
+            <img src="img/pink.jpg" alt="Шаблон 'PINK'" width="360" height="576" >
           </section>
         </li>
         <li>
-          <section>
-            <img src="/borodinky.jpg">
-          </section class="product">
-        </li>
-        <li>
-          <section class="product">
-            <img src="/mishka.jpg">
+          <section class="popup-info">
+            <img src="img/barbershop.jpg" alt="Шаблон 'Barbershop Borodinski'" width="360" height="576">
           </section>
         </li>
         <li>
-          <section class="product">
-            <img src="/a+.jpg">
+          <section class="popup-info">
+            <img src="img/mishka.jpg" alt="Шаблон 'Mishka'" width="360" height="576">
           </section>
         </li>
-          <section class="product">
-            <img src="/kvast.jpg">
+        <li>
+          <section class="popup-info">
+            <img src="img/aplus.jpg" alt="Шаблон 'Aplus'" width="360" height="576">
+          </section>
+        </li>
+          <section class="popup-info">
+            <img src="img/kvast.jpg" alt="Шаблон 'Кваст'" width="360" height="576">
           </section>
         </li>
       </ul>
@@ -121,15 +122,16 @@
 
 </main>
 <footer class="page-footer">
+  <h2 class="visually-hidden">Социальные сети</h2>
   <ul class="links">
     <li>
-      <a href="http://vk.com">Вконтакте</a>
+      <a aria-label="Нёрдс Вконтакте" href="http://vk.com">Вконтакте</a>
     </li>
     <li>
-      <a href="http://facebook.com">Facebook</a>
+      <a aria-label="Нёрдс на Facebook" href="http://facebook.com">Facebook</a>
     </li>
     <li>
-      <a href="http://instagram.com">Instagram</a>
+      <a aria-label="Нёрдс в Instagram" href="http://instagram.com">Instagram</a>
     </li>
   </ul>
   <div class="partnership">
@@ -137,6 +139,32 @@
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
  </footer>
+ <section class="contact-us-popup">
+    <header>
+      <h2>Напишите нам</h2>
+      <button class="close" type="button"><span class="text-hidden">Закрыть</span></button>
+    </header>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <div class="name-and-email-wrapper">
+        <div class="contact-us-field">
+          <label for="contact-form-name">Ваше имя:</label>
+          <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="contact-us-field">
+          <label for="contact-form-email">Ваш e-mail:</label>
+          <input type="email" id="contact-form-email" name="email" placeholder="email@example.com">
+        </div>
+        </div>
+        <div class="contact-us-field text">
+          <label for="contact-form-text">Текст письма:</label>
+          <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+        </div>
+      </fieldset>
+      <button class="btn btn-red" type="submit">Отправить</button>
+    </form>
+  </section>
 
 </body>
+</html>
 
