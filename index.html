@@ -22,12 +22,14 @@
 </header>
 
 <main class="main-container">
-   
+
+  <h1 class="visually-hidden">Дизайн-студия 'Nerds'</h1> 
   <section class="services">
+    <h2 class="visually-hidden">Услуги</h2>
     <ul class="service-list">
       <li>
         <article class="service">
-          <img src="/websites.img">
+          <img src="img/website.jpg" alt="Картинка 'Веб-сайты'" width:="300" height="146">
           <h3 class="service-title">Веб-сайты</h3>
           <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
@@ -35,7 +37,7 @@
       </li>
       <li>
         <article class="service">
-          <img src="/apps.img">
+          <img src="img/apps.jpg" alt="Картинка 'Приложения'" width:="300" height="146">
           <h3 class="service-title">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn" href="#">Заказать</a>
@@ -43,7 +45,7 @@
       </li>
       <li>
         <article class="service">
-          <img src="/presentation.img">
+          <img src="img/presentation.jpg" alt="Картинка 'Презентации'" width:="300" height="146">
           <h3 class="service-title">Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn" href="#">Заказать</a>
@@ -55,20 +57,47 @@
 </main>
 
 <footer class="page-footer">
-    <ul class="links">
-      <li>
-        <a href="http://vk.com">Вконтакте</a>
-      </li>
-      <li>
-        <a href="http://facebook.com">Facebook</a>
-      </li>
-      <li>
-        <a href="http://instagram.com">Instagram</a>
-      </li>
-    </ul>
-    <div class="partnership">
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-   </footer>
+  <h2 class="visually-hidden">Социальные сети</h2>
+  <ul class="links">
+    <li>
+      <a aria-label="Нёрдс Вконтакте" class="vk" href="http://vk.com">Вконтакте</a>
+    </li>
+    <li>
+      <a aria-label="Нёрдс на Facebook" class="instagram" href="http://facebook.com">Facebook</a>
+    </li>
+    <li>
+      <a aria-label="Нёрдс в Instagram" class="facebook" href="http://instagram.com">Instagram</a>
+    </li>
+  </ul>
+  <div class="partnership">
+    <p><b>Давайте дружить, это выгодно!</b></p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+</footer>
+<section class="contact-us-popup">
+    <header>
+      <h2>Напишите нам</h2>
+      <button class="close" type="button"><span class="text-hidden">Закрыть</span></button>
+    </header>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <div class="name-and-email-wrapper">
+        <div class="contact-us-field">
+          <label for="contact-form-name">Ваше имя:</label>
+          <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="contact-us-field">
+          <label for="contact-form-email">Ваш e-mail:</label>
+          <input type="email" id="contact-form-email" name="email" placeholder="email@example.com">
+        </div>
+        </div>
+        <div class="contact-us-field text">
+          <label for="contact-form-text">Текст письма:</label>
+          <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+        </div>
+      </fieldset>
+      <button class="btn btn-red" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
+</html>
