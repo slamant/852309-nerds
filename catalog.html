@@ -5,26 +5,30 @@
   <meta charset="utf-8">
   <title>Nerds-магазин</title>
   <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="main-header main-wrapper">
+    <a class="main-logo" href="index.html">
+      <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
+    </a>
+    <div class="header-top">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="active" href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="cart-link" href="#">Корзина</a> 
+    </div>
+  </header>
+   
+<main class="main-container main-wrapper">
 
-<header class="main-header">
-  <a class="main-logo" href="index.html">
-    <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
-  </a> 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
-    <a class="cart-link" href="#">Корзина</a>
-    
-</header>
-<main>
   <h1 class="main-title">Магазин готовых шаблонов</h1>
     <h2 class="visually-hidden">Фильтр</h2>
     <form class="filter-form">
@@ -85,7 +89,7 @@
       <h3 class="visually-hidden">Список товаров</h3>
       <ul class="product-list">
         <li>
-          <img src="img/sedona.jpg" alt="Шаблон 'Sedona'" width="360" height="576">
+          <img src="img/catalog-items/sedona.jpg" alt="Шаблон 'Sedona'" width="360" height="576">
           <section class="product-popup-info">
             <h4 class="product-title"><a href="#">Sedona</a></h4>
             <p>Информационный сайт для туристов</p>
@@ -94,26 +98,26 @@
         </li>
         <li>
           <section class="popup-info">
-            <img src="img/pink.jpg" alt="Шаблон 'PINK'" width="360" height="576" >
+            <img src="img/catalog-items/pink.jpg" alt="Шаблон 'PINK'" width="360" height="576" >
           </section>
         </li>
         <li>
           <section class="popup-info">
-            <img src="img/barbershop.jpg" alt="Шаблон 'Barbershop Borodinski'" width="360" height="576">
+            <img src="img/catalog-items/barbershop.jpg" alt="Шаблон 'Barbershop Borodinski'" width="360" height="576">
           </section>
         </li>
         <li>
           <section class="popup-info">
-            <img src="img/mishka.jpg" alt="Шаблон 'Mishka'" width="360" height="576">
+            <img src="img/catalog-items/mishka.jpg" alt="Шаблон 'Mishka'" width="360" height="576">
           </section>
         </li>
         <li>
           <section class="popup-info">
-            <img src="img/aplus.jpg" alt="Шаблон 'Aplus'" width="360" height="576">
+            <img src="img/catalog-items/aplus.jpg" alt="Шаблон 'Aplus'" width="360" height="576">
           </section>
         </li>
           <section class="popup-info">
-            <img src="img/kvast.jpg" alt="Шаблон 'Кваст'" width="360" height="576">
+            <img src="img/catalog-items/kvast.jpg" alt="Шаблон 'Кваст'" width="360" height="576">
           </section>
         </li>
       </ul>
@@ -121,50 +125,24 @@
     </section>
 
 </main>
-<footer class="page-footer">
+<footer class="page-footer main-wrapper">
   <h2 class="visually-hidden">Социальные сети</h2>
   <ul class="links">
     <li>
-      <a aria-label="Нёрдс Вконтакте" href="http://vk.com">Вконтакте</a>
+      <a aria-label="Нёрдс Вконтакте" class="vk" href="http://vk.com"><span class="text-hidden">Вконтакте</span></a>
     </li>
     <li>
-      <a aria-label="Нёрдс на Facebook" href="http://facebook.com">Facebook</a>
+      <a aria-label="Нёрдс на Facebook" class="facebook" href="http://facebook.com"><span class="text-hidden">Facebook</span></a>
     </li>
     <li>
-      <a aria-label="Нёрдс в Instagram" href="http://instagram.com">Instagram</a>
+      <a aria-label="Нёрдс в Instagram" class="instagram" href="http://instagram.com"><span class="text-hidden">Instagram</span></a>
     </li>
   </ul>
   <div class="partnership">
     <p><b>Давайте дружить, это выгодно!</b></p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
- </footer>
- <section class="contact-us-popup">
-    <header>
-      <h2>Напишите нам</h2>
-      <button class="close" type="button"><span class="text-hidden">Закрыть</span></button>
-    </header>
-    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <div class="name-and-email-wrapper">
-        <div class="contact-us-field">
-          <label for="contact-form-name">Ваше имя:</label>
-          <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия">
-        </div>
-        <div class="contact-us-field">
-          <label for="contact-form-email">Ваш e-mail:</label>
-          <input type="email" id="contact-form-email" name="email" placeholder="email@example.com">
-        </div>
-        </div>
-        <div class="contact-us-field text">
-          <label for="contact-form-text">Текст письма:</label>
-          <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
-        </div>
-      </fieldset>
-      <button class="btn btn-red" type="submit">Отправить</button>
-    </form>
-  </section>
-
+</footer>
 </body>
 </html>
 
