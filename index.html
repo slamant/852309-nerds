@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header main-wrapper">
+<header class="main-header">
+  <div class="main-wrapper header-container">
   <a class="main-logo">
     <img src="img/nerds-logo.svg" alt="Логотип 'Nerds'" width="160" height="65">
   </a>
@@ -22,8 +23,49 @@
     </nav>
     <a class="cart-link" href="#">Корзина</a> 
   </div>
+  </div>
+  <div class="feature-slider-wrapper main-wrapper">
+    <div class="feature-slider">
+        <ul>
+            <li class="feature feature-1 feature-show">
+              <div class="text">
+                <b class="lead">Долго, дорого,
+                  скрупулезно.</b>
+                <p>Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                <a class="btn btn-red see-more" href="#">Узнать больше</a>
+              </div>
+              <div class="image-container">
+                <img src="img/slider/slide1.png" alt="Картинка к слайдеру 1" width="698" height="413">
+              </div>
+            </li>
+            <li class="feature feature-2">
+              <div class="text">
+                <b class="lead"><span class="text-no-wrap">Любим математику</span> как никто другой</b>
+                <p>Никакого креатива, только математические формулы<br>
+                  для расчета идеальных пропорций.</p>
+                <a class="btn btn-red see-more" href="#">Узнать больше</a>
+              </div>
+              <div class="image-container">
+                <img src="img/slider/slide2.png" alt="Картинка к слайдеру 2" width="663" height="430">
+              </div>
+            </li>
+            <li class="feature feature-3">
+              <div class="text">
+                <b class="lead">Только ночь, <span class="text-no-wrap">только хардкор</span></b>
+                <p>Работать днем, как все? Мы против этого.<br>
+                  Ближе к полуночи работа только начинается.</p>
+                <a class="btn btn-red see-more" href="#">Узнать больше</a>
+              </div>
+              <div class="image-container">
+                <img src="img/slider/slide3.png" alt="Картинка к слайдеру 3" width="759" height="411">
+              </div>
+            </li>
+          </ul>
+    </div>
+  </div>
+</section>
 </header>
- 
 <main class="main-container main-wrapper">
 
   <h1 class="visually-hidden">Дизайн-студия 'Nerds'</h1> 
@@ -57,8 +99,85 @@
     </ul>
   </section>
 
-</main>
 
+
+  <section class="company-description">
+    <h2 class="visually-hidden">Описание компании</h2>
+    <div class="desc">
+      <b class="lead">Мы — маленькая, но гордая <span class="text-no-wrap">дизайн-студия из Краснодара.</span></b>
+      <p><span class="text-no-wrap">Исповедуем принципы минимализма и чистоты. Ставим математический расчет</span>
+        превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <b class="order-types-header">Выполняем заказы на разработку:</b>
+      <ul class="order-types">
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+    <div class="features">
+      <div class="features-wrapper">
+        <h3>С 2004 года любим точность во всем:</h3>
+        <table>
+          <tbody>
+          <tr>
+            <td>146<span class="percent">%</span></td>
+            <td>100<span class="percent">%</span></td>
+            <td>50<span class="percent">%</span></td>
+          </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+            <th>Уровень самоотдачи</th>
+            <th>Соблюдение сроков</th>
+            <th>Минимальная предоплата</th>
+          </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+    <h2 class="visually-hidden">Наши проекты</h2>
+    <ul>
+      <li>
+        <a class="project-link htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="htmlacademy-logo" src="img/brands/htmlacademy-logo.png" alt="HTML Academy" width="199" height="68">
+        </a>
+      </li>
+      <li>
+        <a class="project-link borodinski" href="#">
+          <img src="img/brands/borodinski-logo.png" alt="Barbershop Borodinski" width="209" height="90">
+        </a>
+      </li>
+      <li>
+        <a class="project-link pink" href="#">
+          <img src="img/brands/pink-logo.png" alt="PINK" width="185" height="52">
+        </a>
+      </li>
+      <li>
+        <a class="project-link mishka" href="#">
+          <img class="mishka-logo" src="img/brands/mishka-logo.png" alt="Mishka" width="173" height="84">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+<section class="location">
+  <h2 class="visually-hidden">Расположение</h2>
+
+  <div class="content-container">
+    <img class="marker" src="img/nerds-map-marker.png" alt="Метка" width="231" height="190">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <b class="name">Nёrds design studio</b>
+      <p class="address">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+      <p class="phone-number">тел. +7 (812) 275-75-75</p>
+      <a class="btn btn-red contact-us" href="contacts.html">Напишите нам</a>
+    </section>
+  </div>
+</section>
 <footer class="page-footer main-wrapper">
   <h2 class="visually-hidden">Социальные сети</h2>
   <ul class="links">
@@ -73,10 +192,10 @@
     </li>
   </ul>
   <div class="partnership">
-    <p><b>Давайте дружить, это выгодно!</b></p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="partnership-slogan">Давайте дружить, это выгодно!</p>
+    <p class="partnership-text">Скидка 10% для друзей из социальных сетей.</p>
   </div>
-<section class="contact-us-popup">
+  <section class="contact-us-popup">
     <header>
       <h2>Напишите нам</h2>
       <button class="close" type="button"><span class="text-hidden">Закрыть</span></button>
@@ -86,20 +205,21 @@
         <div class="name-and-email-wrapper">
         <div class="contact-us-field">
           <label for="contact-form-name">Ваше имя:</label>
-          <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия" required>
+          <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="contact-us-field">
           <label for="contact-form-email">Ваш e-mail:</label>
-          <input type="email" id="contact-form-email" name="email" placeholder="email@example.com" required>
+          <input type="email" id="contact-form-email" name="email" placeholder="email@example.com">
         </div>
         </div>
         <div class="contact-us-field text">
           <label for="contact-form-text">Текст письма:</label>
-          <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме" minlength="50" required></textarea>
+          <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
         </div>
       </fieldset>
       <button class="btn btn-red" type="submit">Отправить</button>
     </form>
   </section>
+  <script src="js/popup.js"></script>
 </body>
 </html>
