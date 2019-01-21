@@ -98,21 +98,21 @@
           </li>
           <li class="filter-option">
             <label class="checkbox-label">
-              <input class="checkbox" type="checkbox" name="feature-item"> 
+              <input class="checkbox" type="checkbox"> 
               <span class="fake-checkbox"></span>
               Блок преимуществ
             </label>
           </li>
           <li class="filter-option">
             <label class="checkbox-label">
-              <input class="checkbox" type="checkbox" name="feature-item" checked> 
+              <input class="checkbox" type="checkbox" checked> 
               <span class="fake-checkbox"></span>
               Новости
             </label>
           </li>
           <li class="filter-option">
             <label class="checkbox-label">
-              <input class="checkbox"  name="feature-item" type="checkbox"> 
+              <input class="checkbox" type="checkbox"> 
               <span class="fake-checkbox"></span>
               Галерея
             </label>
@@ -242,6 +242,32 @@
     <p class="partnership-text">Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
+  <section class="contact-us-popup">
+      <div class="contact-us-popup-header">
+        <h2>Напишите нам</h2>
+        <button class="close" type="button"><span class="text-hidden">Закрыть</span></button>
+      </div>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <div class="name-and-email-wrapper">
+          <div class="contact-us-field">
+            <label for="contact-form-name">Ваше имя:</label>
+            <input type="text" id="contact-form-name" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="contact-us-field">
+            <label for="contact-form-email">Ваш e-mail:</label>
+            <input type="email" id="contact-form-email" name="email" placeholder="email@example.com">
+          </div>
+          </div>
+          <div class="contact-us-field text">
+            <label for="contact-form-text">Текст письма:</label>
+            <textarea id="contact-form-text" name="text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+          </div>
+        </fieldset>
+        <button class="btn btn-red" type="submit">Отправить</button>
+      </form>
+    </section>
+    <script src="js/popup.js"></script>
 </body>
 </html>
 
